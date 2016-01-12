@@ -8,7 +8,7 @@ public class PostProcessBuilder {
 
 	public static void OnPostProcessBuild()
 	{
-		throw new IOException("This is an exception");
+		System.IO.File.ReadAllBytes("bogusfilepath.txt");
 	}
 
 }
